@@ -3,10 +3,10 @@
   <title>RuiyiBlog</title>
   
   <subtitle>��¼һЩ�����רҵѧϰ��֪ʶ</subtitle>
-  <link href="atom.xml" rel="self"/>
+  <link href="http://ruiyi0118.github.io/atom.xml" rel="self"/>
   
   <link href="http://ruiyi0118.github.io/"/>
-  <updated>2022-03-18T13:33:39.935Z</updated>
+  <updated>2022-03-18T13:51:14.250Z</updated>
   <id>http://ruiyi0118.github.io/</id>
   
   <author>
@@ -17,12 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My first blog</title>
-    <link href="2022/03/18/My-first-blog/"/>
-    <id>2022/03/18/My-first-blog/</id>
-    <published>2022-03-18T13:33:39.000Z</published>
-    <updated>2022-03-18T13:33:39.935Z</updated>
+    <title>建立单链表——头插法、尾插法</title>
+    <link href="http://ruiyi0118.github.io/2022/03/18/New/"/>
+    <id>http://ruiyi0118.github.io/2022/03/18/New/</id>
+    <published>2022-03-18T10:00:13.000Z</published>
+    <updated>2022-03-18T13:51:14.250Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="建立单链表——头插法、尾插法"><a href="#建立单链表——头插法、尾插法" class="headerlink" title="建立单链表——头插法、尾插法"></a>建立单链表——头插法、尾插法</h2><p>1.头插法</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">CreateListF</span><span class="params">(LinkNode *&amp; L, T a[], <span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">    LinkNode *s;</span><br><span class="line">    L = <span class="keyword">new</span> LinkNode;</span><br><span class="line">    L-&gt;next = <span class="literal">NULL</span>;<span class="comment">//L是创建的头结点</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        s = <span class="keyword">new</span> LinkNode;</span><br><span class="line">        s-&gt;data = a[i];</span><br><span class="line">        s-&gt;next = L-&gt;next;</span><br><span class="line">        L-&gt;next = s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>2.尾插法</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">CreateListR</span><span class="params">(LinkNode *&amp; L, T a[], <span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">    LinkNode *s;</span><br><span class="line">    L = <span class="keyword">new</span> LinkNode;<span class="comment">//L是头结点</span></span><br><span class="line">    r = L; <span class="comment">//r始终指向尾结点</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        s = <span class="keyword">new</span> LinkNode;</span><br><span class="line">        s-&gt;data = a[i];</span><br><span class="line">        r-&gt;next = s;</span><br><span class="line">        r = s;</span><br><span class="line">    &#125;</span><br><span class="line">    r-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;建立单链表——头插法、尾插法&quot;&gt;&lt;a href=&quot;#建立单链表——头插法、尾插法&quot; class=&quot;headerlink&quot; title=&quot;建立单链表——头插法、尾插法&quot;&gt;&lt;/a&gt;建立单链表——头插法、尾插法&lt;/h2&gt;&lt;p&gt;1.头插法&lt;/p&gt;
+&lt;figure clas</summary>
+      
     
     
     
@@ -31,18 +39,15 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="2022/03/16/hello-world/"/>
-    <id>2022/03/16/hello-world/</id>
-    <published>2022-03-16T12:48:39.252Z</published>
-    <updated>2022-03-16T12:48:39.252Z</updated>
+    <link href="http://ruiyi0118.github.io/2022/03/16/hello-world/"/>
+    <id>http://ruiyi0118.github.io/2022/03/16/hello-world/</id>
+    <published>2022-03-16T14:55:10.000Z</published>
+    <updated>2022-03-18T14:29:23.958Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. <span id="more"></span></p><p>If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info.</summary>
     
     
     
